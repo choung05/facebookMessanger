@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_notification" />
+
+    <TextView
+        android:id="@+id/xTextViewNotificationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/xTextViewNotificationBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+</RelativeLayout>

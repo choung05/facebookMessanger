@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/xListViewChatHistory"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="0.77" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/xEditTextChatMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/xButtonChatSend"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:onClick="onClickChatSendMessage"
+        android:text="Send" />
+
+</LinearLayout>
