@@ -10,6 +10,9 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.example.facebookapi.R;
+import com.example.facebookapi.R.id;
+import com.example.facebookapi.R.string;
 import com.facebook.android.DialogError;
 import com.facebook.android.Facebook;
 import com.facebook.android.FacebookError;

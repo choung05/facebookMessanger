@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="3dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:gravity="left" >
+
+         <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/button_exit"
+                android:onClick="onClickExit" />
+
+         <TextView
+             android:id="@+id/xTextViewMyName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:contentDescription="@string/editTextContent"
+             android:text="Sign in, please"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textColor="#FFFFFF" />
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.81"
+            android:gravity="right" >
+
+				<Button
+				    android:id="@+id/button3"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="-12dp"
+				    android:layout_marginRight="2dp"
+				    android:background="@layout/button_wall"
+				    android:onClick="onClickWall" />
+	
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-12dp"
+                android:background="@layout/button_camera"
+                android:onClick="onClickCamera" />
+		
+            <Button
+                android:id="@+id/xButtonLogIn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-12dp"
+                android:background="@layout/button_sign"
+                android:onClick="onClickLogInOut" />
+         
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.98" >
+
+        <ExpandableListView
+            android:id="@+id/xExpListViewFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-20dp" >
+
+        </ExpandableListView>
+
+        <ListView
+            android:id="@+id/xListViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="62dp"
+            android:layout_weight="0.83" >
+
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/xLinearLayoutMessageField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#4087CC"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/xEditTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="#4087CC"
+                android:ellipsize="none"
+                android:ems="10"
+                android:maxEms="10"
+                android:textColor="#FFFFFF" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/xButtonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@layout/button_send"
+            android:onClick="onClickSend" />
+
+    </LinearLayout>
+
+</LinearLayout>
